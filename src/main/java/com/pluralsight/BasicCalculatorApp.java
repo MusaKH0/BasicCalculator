@@ -7,11 +7,11 @@ public class BasicCalculatorApp {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter the first number: ");
+        System.out.print("Enter the first number: ");
         double firstNumber = sc.nextDouble();
-//        sc.nextLine();
+        sc.nextLine();
 
-        System.out.println("Enter the second number: ");
+        System.out.print("Enter the second number: ");
         double secondNumber = sc.nextDouble();
         sc.nextLine();
 
@@ -61,13 +61,13 @@ public class BasicCalculatorApp {
         if (calc.equalsIgnoreCase("Add") || calc.equalsIgnoreCase("A")) {
             System.out.println(firstNumber + secondNumber);
         }
-        if (calc.equalsIgnoreCase("Subtract") || calc.equalsIgnoreCase("S")) {
+        else if (calc.equalsIgnoreCase("Subtract") || calc.equalsIgnoreCase("S")) {
             System.out.println(firstNumber - secondNumber);
         }
-        if (calc.equalsIgnoreCase("Multiply") || calc.equalsIgnoreCase("M")) {
+        else if (calc.equalsIgnoreCase("Multiply") || calc.equalsIgnoreCase("M")) {
             System.out.println(firstNumber * secondNumber);
         }
-        if (calc.equalsIgnoreCase("Divide") || calc.equalsIgnoreCase("D")) {
+        else if (calc.equalsIgnoreCase("Divide") || calc.equalsIgnoreCase("D")) {
             System.out.println(firstNumber / secondNumber);
         }
         else {
